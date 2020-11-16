@@ -1,0 +1,39 @@
+.info {
+    width: 440px;
+    display: inline-block;
+
+    color: $color-black;
+
+    &__header {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: uppercase;
+    }
+
+    &__content {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+
+        margin-top: 10px;
+    }
+
+    @media screen and (max-width: 992px) {
+        margin-top: 38px;
+
+        &__header {
+            font-size: 18px;
+        }
+
+        &__content {
+            width: 333px;
+            font-size: 14px;
+        }
+    }
+}
+

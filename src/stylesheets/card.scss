@@ -1,0 +1,57 @@
+.card {
+    width: 265px;
+    height: 383px;
+
+    position: relative;
+
+    &__job-title {
+        font-family: "PT Serif";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+
+        position: absolute;
+        white-space: nowrap;
+
+        transform: rotate(90deg);
+        transform-origin: left;
+
+        top: -5px;
+        left: 100%;
+    }
+
+    figure {
+        width: 90%;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        figcaption {
+            display: block;
+            margin-top: 15px;
+
+            font-family: "Poppins";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: left;
+
+            color: $color-black;
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 60%;
+        min-width: 156px;
+        height: auto;
+    }
+}
